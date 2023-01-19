@@ -1,0 +1,83 @@
+npm start		 : prg start
+
+ctrl c  		 : close
+
+ctrl s  		 : save
+
+onpress			 :  onPress={() => props.navigation.navigate("SecondPage",{data:name})}
+
+array   		 : const names = ["ashikh","basil","mirshan", "sahad"]
+         		   onPress={()=>{
+         		   Alert.alert("kk",JSON.stringify(names[2]))
+         		   }}>
+
+
+object  		 : const FirstPage = (props) => {
+          		   const name ={
+           		   name:"sahad",
+         		   place:"mepapdi",
+-      			 : <Button
+            		   title="Press me"
+            		   onPress={() => props.navigation.navigate("SecondPage",{data:name})}/>
+--      		 : const{route}=props
+       			   console.log("+++++++++++++++++++++++++++++++++",route.params );
+ --   		         : <Text>
+        		   {route.params.data.name}
+          		   </Text> 
+
+       
+alert   		 : Alert.alert("props",JSON.stringify(test))
+
+
+navigation  		 : onPress={() => props.navigation.navigate("SecondPage")}/>
+goback			 : onPress={() => props.navigation.goBack()}/>
+
+import &install 	 : npm install react-native-paper
+   packages      
+
+image  			 :  <Image style={{}} 
+         		   source={require("./assets/profile.png")} />
+
+circle 			 : <View style={styles.circle}>
+			   </View>
+			   circle: {
+	   		   left: 5,
+	  		   width: 80,
+	  		   height: 70,
+	   		   borderRadius: 80 / 2
+          		   },
+		
+usestate    		 : const [name,setname]=useState("sahad")
+	   		   onPress={()=>{setname("mirshan")}}>
+
+async storage  		 : import AsyncStorage from "@react-native-async-storage/async-storage"
+
+	--		   AsyncStorage.setItem("imageContainer", JSON.stringify(result.assets[0].uri));
+	-- 		   useEffect(() => {
+   			   AsyncStorage.getItem('imageContainer', (err, result) => {
+      		 	   const data = JSON.parse(result);
+     			   setImage(data)
+     			   })
+			   }, [])
+
+
+remove current image  	 :  onPress={()=>{
+         		   AsyncStorage.removeItem("imageContainer")
+         		   setImage(null)
+       			   }}>
+     		 
+login 			 : const login = () => {
+
+        		  if (username === "Admin" && Password === "123") {
+
+		            props.navigation.navigate("FirstPage")
+
+		          } else {
+            		  alert("username or password incorrect")
+        			}
+    			   }
+	--		 : <Button title='login' onPress={() => { login() }} />
+
+Icons			 : import Icon2 from 'react-native-vector-icons/Entypo';
+
+if or changin:		 :  {show?"eye-with-line":"eye"} 
